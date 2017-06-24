@@ -1,0 +1,8 @@
+html
+  head
+    title= title
+  body
+    //<script nonce=#{nonce} > alert('Inline with nonce')</script>
+    h1= message
+    h1!= 'My name : ' + name
+    div!= content 

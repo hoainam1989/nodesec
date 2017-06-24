@@ -1,0 +1,11 @@
+html
+  head
+    title= 'Cross Site Request Forgery'
+  body
+    form(action='/process', method='POST')
+        input(type='hidden', name='_csrf', value=_csrf)
+        div
+        label(for='password') New Password
+        input(type='text', name='password', id='password')
+        div
+        input(type='submit', value='Update Password')
